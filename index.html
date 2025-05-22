@@ -1,59 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AkaKrishTech | Home</title>
-  <!--
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-  -->
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AkaKrishTech</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <img src="1.webp" alt="AkaKrish Tech Logo" />
+    <div class="logo">
+      <img src="1.webp" alt="AkaKrishTech Logo" />
+    </div>
     <nav>
-      <a href="#krishai">Krish AI</a>
-      <a href="#gears">Gears</a>
-      <a href="#contact">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
     </nav>
   </header>
 
-  <section class="section" id="krishai">
-    <h1>Krish AI</h1>
-    <button onclick="showInfo('krish')">Know More</button>
-    <div class="info" id="krish-info"></div>
-    <div class="logo-display">
-      <div>
-        <img src="2.webp" alt="Krish AI Logo" />
-        <p style="margin-top: 0.5rem;">Krish AI</p>
-      </div>
+  <section id="home" class="hero">
+    <h1>Empowering India with AI</h1>
+    <p>Innovative solutions tailored for the Indian ecosystem.</p>
+  </section>
+
+  <section id="products" class="products">
+    <div class="product-card" onclick="toggleInfo('krish')">
+      <img src="2.webp" alt="Krish AI Logo" />
+      <h2>Krish AI</h2>
+      <p id="krish-info" class="product-info">Click to learn more about Krish AI.</p>
+    </div>
+    <div class="product-card" onclick="toggleInfo('gears')">
+      <img src="3.png" alt="Gears Logo" />
+      <h2>Gears</h2>
+      <p id="gears-info" class="product-info">Click to learn more about Gears.</p>
     </div>
   </section>
 
-  <section class="section" id="gears">
-    <h1>Gears</h1>
-    <button onclick="showInfo('gears')">Know More</button>
-    <div class="info" id="gears-info"></div>
-    <div class="logo-display">
-      <div>
-        <img src="3.png" alt="Gears Logo" />
-        <p style="margin-top: 0.5rem;">Gears</p>
-      </div>
-    </div>
+  <section id="about" class="about">
+    <div class="logo-display company-logo">
+    <div>
+     <img src="1.webp" alt="AkaKrishTech Logo" />
+     <p style="margin-top: 0.5rem;">AkaKrishTech</p>
+   </div>
+ </div>
+    <h2>About AkaKrishTech</h2>
+    <p>At AkaKrishTech, we develop AI-powered products like Krish AI and Gears, focusing on privacy, multilingual support, and offline capabilities to serve the diverse needs of Indian users.</p>
   </section>
 
-  <footer id="contact">
+  <footer>
     <p>Licensed under the Apache License, Version 2.0</p>
   </footer>
 
