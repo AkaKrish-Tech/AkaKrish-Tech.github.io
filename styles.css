@@ -126,3 +126,19 @@ footer {
   color: #888;
   font-size: 0.9rem;
 }
+
+.try-now-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #1a73e8;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.try-now-btn:hover {
+  background-color: #0f5bd9;
+}
